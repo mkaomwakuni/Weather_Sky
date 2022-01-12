@@ -1,0 +1,6 @@
+# Smoovie-android-TMDb
+
+![Travis Buils](https://travis-ci.org/Davidodari/Smoovie-android-TMDb.svg?branch=master)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/a3842e79b83445e9a05f10cee37d7e4a)](https://app.co
+# Project exclude paths
+/.gradle/

@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name" translatable="false">Smoovie</string>
+
+    <!--Main Menu Sort By-->
+    <string name="action_sort_most_popular">Most Popular</string>
+    <string name="action_sort_top_rated">Top Rated</string>
+    <string name="action_sort_upcoming">Upcoming</string>
+    <string name="action_sort_favourites">Favourites</string>
+
+    <!--Grid Item-->
+    <string name="label_text_placeholder" translatable="false">Movie Title</string>
+    <string name="label_content_description_poster">Poster Image</string>
+
+    <!--Action Buttons-->
+    <string name="action_sort_label" translatable="false">Sort</string>
+    <string name="action_settings_label" translatable="false">Settings</string>
+
+
+    <!--Error Log Messages-->
+    <string name="error_network_message">"Please check your internet connection"</string>
+
+    <!--Detail Screen-->
+    <string name="label_overview">Overview</string>
+    <string name="label_released">Released On</string>
+    <string name="label_rating_total" translatable="false">/10</string>
+    <string name="label_content_description_favicon">Favourites Icon</string>
+    <string name="label_trailers">Trailers</string>
+    <string name="label_reviews">Reviews</string>
+    <string name="label_share">Share</string>
+    <string name="label_default" translatable="false">---</string>
+    <string name="error_trailer_unavailable">No Trailer Available</string>
+    <string name="error_review_unavailable">No Review Available</string>
+
+    <!--Dummy Details-->
+    <string name="movie_title_dummy_text" translatable="false">Hotel Transylvania 3:Summer Vacation</string>
+    <string name="movie_rating_dummy_text" translatable="false">6.9</string>
+    <string name="movie_overview_dummy_text
