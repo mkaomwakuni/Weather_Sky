@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.widget.TextView;
 
 import com.mkao.weathersky.Utilities.NetworkUtils;
+import com.mkao.weathersky.Utilities.OpenWeatherJsonUtils;
 
 import java.net.URL;
 import java.util.ArrayList;
@@ -33,10 +34,26 @@ public class MainActivity extends AppCompatActivity {
             }
 
             String Locality = params[0];
-            URL WeatherRequestUrl = NetworkUtils.buildUrl(Locality);
+            URL WeatherRequestUrl = NetworkUtils.buildurl(Locality);
             try {
-                String jsonWeatherResponse = NetworkUtils;
+                String jsonWeatherResponse = NetworkUtils.getResponseFromHttpUrl(WeatherRequestUrl);
 
+                String[] simpleJsonWeatherData = OpenWeatherJsonUtils.getSimpleWeatherStringsFromJson(MainActivity.this, jsonWeatherResponse);
+                return  simpleJsonWeatherData;
+            }catch (Exception e){
+                e.printStackTrace();
+                return null;
+            }
+
+        }
+        //To display the results of the network request onPostExecute has to be Overridden
+        @Override
+        protected void onPostExecute(String[] weatherData){
+            if (weatherData !=null){
+
+                for (String weatherString : weatherData ){
+                    weather_data.append(weatherString + "\n\n\n");
+                }
             }
         }
 
